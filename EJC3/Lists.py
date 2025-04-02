@@ -48,6 +48,7 @@ print(my_list3)
 my_list3.pop(1)
 print(my_list3)
 
+
 # --- Pop Return Value ---
 # Demonstrates that pop() returns the element that was removed.
 print(my_list)
