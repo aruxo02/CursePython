@@ -1,5 +1,7 @@
 #funcion
 
+from random import *
+
 def saludar_persona(nombre):
     '''Esta funcion sirve para saludar'''
     print(f"Hola {nombre}")
@@ -46,6 +48,25 @@ o_cafe,o_precio = cafe_mas_caro(precios_cafe)
 print(o_cafe)
 print(o_precio)
 #-------------------------------------------
+
+
+lista_numeros = [1, 2, 3, 4, 5, 6, 7]
+
+
+def lanzar_moneda():
+    return choice(["Cara", "Cruz"])
+
+
+def probar_suerte(moneda, lista):
+    if moneda == "Cara":
+        print("La lista se autodestruirá")
+        return []
+    else:
+        print("La lista fue salvada")
+        print(lista)
+        return lista
+
+lista_numeros = probar_suerte(lanzar_moneda(), lista_numeros)
 
 
 
